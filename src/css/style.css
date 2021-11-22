@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.Container {
+  height: 100%;
+}
+
+.header {
+  padding-left: 2rem;
+  background-color: #fae5d3;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.Container:before {
+  content: "";
+  height: 100%;
+  float: left;
+}
+
+.Content {
+  position: relative;
+  z-index: 1;
+}
+.Content:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.Wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.Wrapper > div {
+  height: 100%;
+}
+
+.CoffeeList {
+  background-color: #fdf2e9;
+  height: 100%;
+  width: 75%;
+  padding: 5rem;
+  padding-top: 2rem;
+  overflow-y: auto;
+}
+
+.item {
+  background-color: white;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+  height: 38rem;
+  width: 24rem;
+}
+
+.item:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.item-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.item-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.item-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.item-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.item-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 72%;
+}
+
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #eb984e;
+  width: 25%;
+  float: right;
+  display: hidden;
+}
+
+.Sidebar-balance {
+  display: block;
+  height: 10%;
+  padding-top: 2.4rem;
+  padding-left: 2.4rem;
+}
+
+.Sidebar-list {
+  overflow-y: auto;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.Sidebar-list-item {
+  border: solid black;
+  border-radius: 11px;
+  color: black;
+  display: block;
+  margin: 1.2rem;
+  margin-bottom: 0;
+}
+
+.Sidebar-list-item-name {
+  border-bottom: solid black;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.Sidebar-list-item-control {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.Sidebar-list-item-number {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  font-size: 2.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
+
+.btn-minus:hover {
+  font-size: 3.6rem;
+  background-color: inherit;
+}
+
+.btn-plus:hover {
+  font-size: 3.6rem;
+  background-color: inherit;
+}
+
+.btn-minus {
+  border-right: solid black;
+  border-radius: 0;
+}
+
+.btn-plus {
+  border-left: solid black;
+  border-radius: 0;
+}
+
+.btn-submit,
+.btn-reset {
+  margin: 1rem;
+}
+
+.btn-reset {
+  margin-left: 3rem;
+}
