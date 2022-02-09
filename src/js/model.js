@@ -53,6 +53,7 @@ export const updateBalance = function () {
 
 export const reset = function () {
   state.balance = 500;
+  state.takenTotal = 0;
   state.coffees.forEach((el) => {
     el.taken = 0;
   });
